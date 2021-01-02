@@ -1,10 +1,10 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="{{ url_for ('static', filename="css/bootstrap.min.css")}}">
-	<link rel="stylesheet" href="{{url_for('static', filename="css/style.css")}}">
+	<link rel="stylesheet" href="{{ url_for ('static', filename=" css/bootstrap.min.css")}}">
+	<link rel="stylesheet" href="{{url_for('static', filename=" css/style.css")}}">
 
-	<title>WELCOME TO MY WEBSITE</title>
+	<title>WELCOME TO SIM PENGADUAN</title>
 </head>
 
 <body>
@@ -19,7 +19,8 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="{{ url_for ('vmahasiswa.home')}}">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="{{ url_for ('vmahasiswa.home')}}">Home <span
+								class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="{{ url_for ('vmahasiswa.about')}}">About</a>
@@ -68,14 +69,17 @@
 				<div class="shadow p-3 mb-5 bg-white rounded">
 					{%if current_user.is_authenticated%}
 					<div class="card" style="width: 18rem;">
-						<img src="{{url_for('static', filename="img/" + current_user.foto)}}" class="card-img-top" alt="...">
+						<img src="{{url_for('static', filename=" img/" + current_user.foto)}}" class="card-img-top"
+							alt="...">
 						<div class="card-body">
 							<h5 class="card-title">{{current_user.nama}}</h5>
 							<p class="card-text">{{current_user.email}}</p>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item"><a href="{{ url_for ('vmahasiswa.akunmahasiswa')}}">Dasboard</a></li>
-							<li class="list-group-item"><a href="{{ url_for ('vmahasiswa.pengaduan')}}">Pengaduan</a></li>
+							<li class="list-group-item"><a href="{{ url_for ('vmahasiswa.akunmahasiswa')}}">Dasboard</a>
+							</li>
+							<li class="list-group-item"><a href="{{ url_for ('vmahasiswa.pengaduan')}}">Pengaduan</a>
+							</li>
 							<li class="list-group-item">Vestibulum at eros</li>
 						</ul>
 						<div class="card-body">
@@ -84,8 +88,9 @@
 						</div>
 					</div>
 					{%else%}
-					<li>Data Mahasiswa</li>
-					<li>Data Dosen</li>
+					<p>Nama : Windari Safirti</p>
+					<p>Npm : 121055520118071</p>
+					<p>Kelas: Info 2</p>
 					{%endif%}
 
 				</div>
